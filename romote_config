@@ -1,0 +1,13 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+
+# ctecuser
+# Host JumpMachine
+#     HostName 192.168.173.101
+#     User user
+#     Port 9128
+
+Host 192.168.43.67
+    HostName 192.168.43.67
+    User root
+    Port 10102
+    ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy-type http --proxy 192.168.173.101:9128 %h %p --proxy-auth user:ctecuser
