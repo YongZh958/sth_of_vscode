@@ -7,7 +7,11 @@
 #     Port 9128
 
 Host 192.168.43.67
+# 主机名，随意取
     HostName 192.168.43.67
+    #目标机ip
     User root
+    #登入的用户名，可以不是root
     Port 10102
+    #下载ncat并解压（无需安装）（我安装了）
     ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy-type http --proxy 192.168.173.101:9128 %h %p --proxy-auth user:ctecuser
