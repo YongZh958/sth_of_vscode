@@ -13,5 +13,5 @@ Host 192.168.43.67
     User root
     #登入的用户名，可以不是root
     Port 10102
-    #下载ncat并解压（无需安装）（我安装了）
+    #下载ncat并解压（无需安装）（我安装了）https://nmap.org/download#windows
     ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy-type http --proxy 192.168.173.101:9128 %h %p --proxy-auth user:ctecuser
