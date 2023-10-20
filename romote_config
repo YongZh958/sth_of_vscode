@@ -15,3 +15,4 @@ Host 192.168.43.67
     Port 10102
     #下载ncat并解压（无需安装）（我安装了）https://nmap.org/download#windows
     ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy-type http --proxy 192.168.173.101:9128 %h %p --proxy-auth user:ctecuser
+ssh -o ProxyCommand="ncat --proxy-type http --proxy 192.168.173.101:9128 %h %p --proxy-auth user:ctecuser" -p 10013 root@192.168.43.102
